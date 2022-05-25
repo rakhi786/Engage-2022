@@ -1,4 +1,4 @@
-# Engage2022
+# 💖 Engage2022
  ## Face Mask Recognition System Using Flask and Tensorflow
  This is project under Microsoft Engage 2022 Mentorship programme aimed at using Computer Vision to detect face mask in real time.The detector created is pretty   accurate, and since we used the MobileNetV2 architecture, it’s also computationally efficient and can be used in embeded systems. The project runs on the server whose backend is built using Flask.
  This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
@@ -10,7 +10,7 @@
   3. The project was then deployed using Flask to run on a webserver.
   4. To improve the fps we have used a custom based I/O technique using threading and added FPS count implementation to calculate fps.
 
- ## Features
+ ## 💻Features
  1. Real Time Camera
  2. Face Recognition in the frame
  3. Mask Detection on Faces in the frame
@@ -18,8 +18,18 @@
  5. Mask Detection Model 99% accurate
  6. On clicking the video button, mask detector model gets activated which can be seen through a window which will be opened up on clicking the button, displaying the results of the model.
 
+ ## Tech Stack Used
+ [![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,tensorflow,flask)](https://skills.thijs.gg)
+ 1. Python 
+ 2. Tensorflow
+ 3. Flask
+ 4. Keras
+ 5. HTML
+ 6. CSS
+ 7. Javascript
  ## Accuracy Plot
  <br> <img height="500" width="700" src="https://github.com/rakhi786/Engage-2022/blob/main/Accuracy_Plot/Capture.PNG"><br>
+
   
   ## 🚀&nbsp; Installation
 1. Clone the repo

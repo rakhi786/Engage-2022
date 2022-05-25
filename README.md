@@ -17,6 +17,9 @@
  4. Gender Detection on Faces in the frame
  5. Mask Detection Model 99% accurate
  6. On clicking the video button, mask detector model gets activated which can be seen through a window which will be opened up on clicking the button, displaying the results of the model.
+
+ ## Accuracy Plot
+ <br> <img height="500" width="700" src="https://github.com/rakhi786/Engage-2022/blob/main/Accuracy_Plot/Capture.PNG"><br>
   
   ## 🚀&nbsp; Installation
 1. Clone the repo

@@ -50,12 +50,12 @@ $ flask run
 8. Now Head onto the following server [http://127.0.0.1:5000/](http://127.0.0.1:5000/) or the server mentioned in the command line to access the webpage .
 ### Optional Features
 #### Frame Rate Per Second 
-   1. To analyze frames rate per second run the following command
+   1. To analyze frames rate per second run the following command. Linux users use python3 instead of python in the terminal
    ```
    $ python Fps_Analysis.py  
    ```
 #### Training 
-   1. If you want to train the model using your own dataset run the following command
+   1. If you want to train the model using your own dataset run the following command. Linux users use python3 instead of python in the terminal
    ```
    $ python train.py --datatset <name of the dataset folder>  
    ```

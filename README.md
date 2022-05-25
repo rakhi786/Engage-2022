@@ -9,6 +9,14 @@
   2. A model was trained on the dataset to sucessfully detect mask on the face using Keras 
   3. The project was then deployed using Flask to run on a webserver.
   4. To improve the fps we have used a custom based I/O technique using threading and added FPS count implementation to calculate fps.
+
+ ## Features
+ 1. Real Time Camera
+ 2. Face Recognition in the frame
+ 3. Mask Detection on Faces in the frame
+ 4. Gender Detection on Faces in the frame
+ 5. Mask Detection Model 99% accurate
+ 6. On clicking the video button, mask detector model gets activated which can be seen through a window which will be opened up on clicking the button, displaying the results of the model.
   
   ## 🚀&nbsp; Installation
 1. Clone the repo

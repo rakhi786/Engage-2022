@@ -16,7 +16,7 @@
  3. Face Recognition in the frame
  4. Mask Detection on Faces in the frame
  5. Gender Detection on Faces in the frame
- 6. Mask Detection Model 99% accurate
+ 6. Mask Detection Model 98% accurate
  7. On clicking the video button, mask detector model gets activated which can be seen through a window which will be opened up on clicking the button, displaying the     results of the model. I have used the deep learning pre-trained model to detect the faces from the image of different angles, and the model that used is Caffe         model.
     This functionality also predicts the gender of the person in the frame along with detecting face mask.The predicition that the person is wearing mask or not was 
     achieved through the application of convolutional neural networks. The model was trained in the keras environment.
@@ -26,7 +26,7 @@
  2. After getting the boundaries of the face, we can pass it into our face mask detector which we are going to build using the TensorFlow/Keras environment.
  3. The face detector model was constructed using mobilenetv2 architecture as the base model(feature extractor) and adding a few layers prior to get the softmax           predictions.
  4. The loss function used was binary crossentroppy and model was trained using adam optimizer with standard hyperparameters.
- 5. The mask detector was able to reach 97% accuracy with 0.93 f1 score on validation set.  
+ 5. The mask detector was able to reach 98% accuracy with 0.93 f1 score on validation set.  
 
 
  ## Tech Stack Used

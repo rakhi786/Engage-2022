@@ -1,4 +1,4 @@
-
+# Use of Threading for faster Input Output operations on camera feed
 from threading import Thread
 import cv2
 class FASTIO:

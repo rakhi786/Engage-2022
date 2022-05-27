@@ -13,12 +13,12 @@ app = Flask(__name__)
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 
-
+# Homepage template
 @app.route('/')
 def index():
     return render_template("index.html")
 
-
+# Webcam feed template
 @app.route('/upload', methods=["POST"])
 def upload():
     mask_detect()

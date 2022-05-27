@@ -1,3 +1,5 @@
+# Simple script to obtain mask detector results on images which were used to present
+# in the gallery of homepage 
 from mask_detection import mask_detect_image,mask_detect
 import cv2
 import argparse

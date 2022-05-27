@@ -12,8 +12,9 @@ from FastIO import FASTIO
 def detect_mask(frame,face_detect,mask_detect,gender_detect):
         (height,width)= frame.shape[:2]
         gender_list=['Male','Female']
+        #For image preprocessing 
         image_blob=cv2.dnn.blobFromImage(frame,1.0,(300,300),(104.0,177.0,123.0))
-        #Performing face detection in the image
+        #Performing face detection in the image and detections contains the results of faces obtained
         face_detect.setInput(image_blob)
         detections=face_detect.forward()
         location=[]
@@ -61,7 +62,7 @@ def detect_mask(frame,face_detect,mask_detect,gender_detect):
                         faces.append(face)
                         location.append((X_start,Y_start,X_end, Y_end))
 
-        
+        # Iterate over all the faces obtained for getting predictions for mask detections
         if len(faces) > 0:
                 faces=np.array(faces,dtype="float32")
                 pred=mask_detect.predict(faces,batch_size=32)
@@ -98,7 +99,7 @@ def mask_detect():
                 for (bounding_box,pred,gender) in results:
                         X_start,Y_start,X_end,Y_end= bounding_box
                         mask,without_mask=pred
-                        
+                        # Threshold critertia for checkig if mask is present
                         if mask>0.6:
                                 label="MASK"
                         else :
@@ -112,7 +113,7 @@ def mask_detect():
                         text=label+" : {:.2f}".format(max(mask,without_mask)*100)
                         text2=str(gender)
 
-                        
+                        # Output the bounding box rectangle with obtained results
                         cv2.rectangle(frame,(X_start-4,Y_start),(X_end+4,Y_start-40),color,-1)
                         cv2.putText(frame,text,(X_start,Y_start-10),cv2.FONT_HERSHEY_COMPLEX, 0.60,(255,255,224),3)
                         cv2.rectangle(frame,(X_start,Y_start),(X_end,Y_end),color,8)
@@ -121,12 +122,15 @@ def mask_detect():
                                
                 cv2.imshow("Real Time Mask Detection",frame)
                 key=cv2.waitKey(1)&0xFF
+                # Press q for ending the webcam feed
                 if key==ord("q"):
                         break
-                
+        # Destroy all windows        
         cv2.destroyAllWindows()
         cap.stop()
 
+# Function for mask detection on images to obtain mask detector results on images which were used to present
+# in the gallery of homepage 
 def mask_detect_image(img):
         frame = img
         #frame=cv2.resize(frame,(500,500))
@@ -166,5 +170,4 @@ def mask_detect_image(img):
                 cv2.rectangle(frame,(X_start-4,Y_end),(X_end+4,Y_end+40),color,-1)
                 cv2.putText(frame,text2,(X_start,Y_end+20),cv2.FONT_HERSHEY_COMPLEX, 0.80, (255, 255, 224), 2)
         return frame
-        
 

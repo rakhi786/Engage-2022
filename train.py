@@ -15,7 +15,7 @@ import numpy as np
 import argparse
 import os
 
-
+# Use argeparse for command line instructions
 ap=argparse.ArgumentParser()
 ap.add_argument("-d","--dataset",required=True)
 args=vars(ap.parse_args())
@@ -31,7 +31,7 @@ imagePaths = list(paths.list_images(args["dataset"]))
 dataset=[]
 labels=[]
 
-# loop over the image paths
+# loop over the image paths to create the dataset
 for imagePath in imagePaths:
 	
 	label=imagePath.split(os.path.sep)[-2]
@@ -90,6 +90,6 @@ History=model.fit(
 	validation_data=(X_valid,y_valid),
 	validation_steps=len(X_valid)//Batch_Size,
 	epochs=epochs)
-
+# Saving the final model
 model.save("mask_detector_model.model",save_format="h5")
 

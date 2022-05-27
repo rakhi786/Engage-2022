@@ -9,4 +9,4 @@ Pillow==7.0.0
 scikit-learn==0.22.1
 sklearn==0.0
 tensorflow==2.9.0
-
+pygame==2.1.2

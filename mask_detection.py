@@ -5,14 +5,13 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
 from tensorflow.keras.models import load_model
 import imutils
-from pygame import mixer
 from FastIO import FASTIO
 
 
 
 def detect_mask(frame,face_detect,mask_detect,gender_detect):
         (height,width)= frame.shape[:2]
-        gender_list=['Female','Female']
+        gender_list=['Male','Female']
         image_blob=cv2.dnn.blobFromImage(frame,1.0,(300,300),(104.0,177.0,123.0))
         #Performing face detection in the image
         face_detect.setInput(image_blob)
@@ -85,8 +84,6 @@ def mask_detect():
         gender_detect=cv2.dnn.readNet(prototxtPath,weightsPath)
         mask_detect=load_model("mask_detector_model.model")
         
-        mixer.init() 
-        sound=mixer.Sound("beep-06.mp3")
         
         #Using our customized fast I/O Method instead of Opencv's VideoCapture() method
         cap=FASTIO(0).start()
@@ -110,9 +107,7 @@ def mask_detect():
                         color=(147,20,255)
                         
                         if label=="MASK":
-                                color=(235,206,135)
-                        else :
-                                sound.play()        
+                                color=(235,206,135)       
                                 
                         text=label+" : {:.2f}".format(max(mask,without_mask)*100)
                         text2=str(gender)

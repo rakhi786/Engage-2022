@@ -1,9 +1,9 @@
 # 💖 Engage2022
- ## Face Mask Recognition System Using Flask and Tensorflow
+ ## 😷 Face Mask Recognition System Using Flask and Tensorflow
  This is project under Microsoft Engage 2022 Mentorship programme aimed at using Computer Vision to detect face mask in real time.The detector created is pretty   accurate, and since we used the MobileNetV2 architecture, it’s also computationally efficient and can be used in embeded systems. The project runs on the server whose backend is built using Flask.
  This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
  
- ## Project Structure
+ ## ⚙️ Project Structure
   #### The structure of the project was as follows -
   1. The project uses caffe based implementation for face and gender detection . The gender detection model is work by Gil Levi and Tal Hassner. Link to the [research paper](https://talhassner.github.io/home/publication/2015_CVPR)
   2. A model was trained on the dataset to sucessfully detect mask on the face using Keras 
@@ -21,7 +21,7 @@
     This functionality also predicts the gender of the person in the frame along with detecting face mask.The prediction that the person is wearing mask or not was 
     achieved through the application of convolutional neural networks. The model was trained in the keras environment.
     
- ## Characteristcs:
+ ## 🔑 Characteristcs:
  1. The detector uses a face detector to first get the bounding box for the face.
  2. After getting the boundaries of the face, we can pass it into our face mask detector which we are going to build using the TensorFlow/Keras environment.
  3. The face detector model was constructed using mobilenetv2 architecture as the base model(feature extractor) and adding a few layers prior to get the softmax           predictions.
@@ -29,7 +29,7 @@
  5. The mask detector was able to reach 98% accuracy with 0.93 f1 score on validation set.  
 
 
- ## Tech Stack Used
+ ## ⚠️ Tech Stack Used
  [![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,tensorflow,flask)](https://skills.thijs.gg)
  1. Python 
  2. Tensorflow
@@ -38,7 +38,7 @@
  5. HTML
  6. CSS
  7. Javascript
- ## Accuracy Plot
+ ## ⌛ Accuracy Plot
  <br> <img height="500" width="700" src="https://github.com/rakhi786/Engage-2022/blob/main/Accuracy_Plot/Capture.PNG"><br>
 
   
@@ -81,7 +81,7 @@ $ flask run
 ```
 8. Now Head onto the following server [http://127.0.0.1:5000/](http://127.0.0.1:5000/) or the server mentioned in the command line to access the webpage .
 
-### Working
+### ⌛ Working
    On opening the server, we can click on the video button to get the expected results. On clicking the video button,mask detector model gets activated which can be      seen through a window which will be opened up on clicking the button, displaying the results of the model. WE CAN DESTROY THE OPENED WINDOW BY PRESSING 'Q'.Then we    will again redirected to our home page.
  
 ### Optional Features

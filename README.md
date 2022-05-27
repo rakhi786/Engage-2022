@@ -96,7 +96,7 @@ $ flask run
    $ python train.py --datatset <name of the dataset folder>  
    ```
    
- ## Challenges Faced
+ ## ‼️ Challenges Faced
  1. Firstly, I never had my hand in deploying a python model on web browser so for this purpose i had to learn about how to provide backend and frontend to the model. Although, i knew some frontend part so that didn't bother me much but for backend i had to learn about the frameworks that could be taken into use. Therefore i read about Django initially but it seemed a bit complex to me so i switched to Flask framework. I found it easy, comparatively.
  2. When finally I could run my Flask mask detector app on serverside, I again came up with the issue of a file size >500mb, the actual issue was that the platforms that were known to me for deploying webapps do deploy projects of size upto 500mb only meanwhile mine was having about 900mb or so. Then i searched for it  and then i found Azure, which was more suitable for deploying such project of greater size.
  3. However The problem with Azure was that when deploying it using Git or Azure CLI, it does not have OpenCV dependency LibGl installed on the Linux Server it uses .

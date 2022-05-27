@@ -18,7 +18,7 @@
  5. Gender Detection on Faces in the frame
  6. Mask Detection Model 98% accurate
  7. On clicking the video button, mask detector model gets activated which can be seen through a window which will be opened up on clicking the button, displaying the     results of the model. I have used the deep learning pre-trained model to detect the faces from the image of different angles, and the model that used is Caffe         model.
-    This functionality also predicts the gender of the person in the frame along with detecting face mask.The predicition that the person is wearing mask or not was 
+    This functionality also predicts the gender of the person in the frame along with detecting face mask.The prediction that the person is wearing mask or not was 
     achieved through the application of convolutional neural networks. The model was trained in the keras environment.
     
  ## Characteristcs:

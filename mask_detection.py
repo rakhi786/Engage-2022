@@ -11,7 +11,7 @@ from FastIO import FASTIO
 
 def detect_mask(frame,face_detect,mask_detect,gender_detect):
         (height,width)= frame.shape[:2]
-        gender_list=['Female','Female']
+        gender_list=['Male','Female']
         image_blob=cv2.dnn.blobFromImage(frame,1.0,(300,300),(104.0,177.0,123.0))
         #Performing face detection in the image
         face_detect.setInput(image_blob)

@@ -2,7 +2,10 @@
  ## 😷 Face Mask Recognition System Using Flask and Tensorflow
  This is project under Microsoft Engage 2022 Mentorship programme aimed at using Computer Vision to detect face mask in real time.The detector created is pretty   accurate, and since we used the MobileNetV2 architecture, it’s also computationally efficient and can be used in embeded systems. The project runs on the server whose backend is built using Flask.
  This project can be integrated with embedded systems for application in airports, railway stations, offices, schools, and public places to ensure that public safety guidelines are followed.
- ## Video
+ ## Video Link
+   Here is a short demonstration of how the Project Works
+   <a href="https://www.youtube.com/watch?v=r4nbRYAFg9U" target="_blank"><img align="left" height="40" width="100" src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" /></a>
+   
  
  ## ⚙️ Project Structure
   #### The structure of the project was as follows -
@@ -106,9 +109,9 @@ $ flask run
  4. The prototype of the website which I deployed is available on the following link [https://facemaskrecognition.azurewebsites.net/](https://facemaskrecognition.azurewebsites.net/) but the video button does not respond to the request because of the OpenCV issue I mentioned above .
  5. The project is fully functional with all the functionalities locally .
 
- ## Contact me 
- <a href="https://www.linkedin.com/in/rakhi1118/" target="_blank"><img align="left" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-     icons@v3/icons/linkedin.svg" /></a>
+ ## 📞 Contact Me 
   <a href="mailto: rakhi.sehra.mat19@iitbhu.ac.in" target="_blank"><img align="left" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" /></a>
+  <a href="https://www.linkedin.com/in/rakhi1118/" target="_blank"><img align="left" height="40" width="40" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" /></a>
 <br/>
 
 > **Feel free to contribute ✨**.   
